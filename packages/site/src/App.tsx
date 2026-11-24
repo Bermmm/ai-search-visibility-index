@@ -58,6 +58,8 @@ function Dashboard({ data }: { data: IndexData }) {
     (s) => s.week === sel.week && s.engine === sel.engine && s.category === sel.category,
   );
   const answers = rows[0]?.responses ?? 0;
+  const engine = data.engines.find((e) => e.slug === sel.engine);
+  const noWeb = engine !== undefined && !engine.usesWeb;
 
   return (
     <main>
@@ -147,7 +149,7 @@ function Dashboard({ data }: { data: IndexData }) {
                       </td>
                       <td className="num">{pct(r.mentionRate)}</td>
                       <td className="num">{r.avgPosition === null ? "—" : r.avgPosition.toFixed(1)}</td>
-                      <td className="num">{pct(r.citationRate)}</td>
+                      <td className="num">{noWeb ? <span className="muted">n/a</span> : pct(r.citationRate)}</td>
                       <td>
                         <Sparkline values={brandHistory(data, r.brand, sel.engine)} />
                       </td>
@@ -163,7 +165,12 @@ function Dashboard({ data }: { data: IndexData }) {
       <div className="grid">
         <section className="card">
           <h2>Most-cited sources</h2>
-          {sources.length === 0 ? (
+          {noWeb ? (
+            <p className="muted">
+              {engine.name} answers from what the model already knows, without searching the web, so it cites no
+              sources. Its own-site citation score is always 0.
+            </p>
+          ) : sources.length === 0 ? (
             <p className="muted">No citations recorded.</p>
           ) : (
             <ol className="sources">

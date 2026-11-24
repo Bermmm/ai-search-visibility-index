@@ -5,7 +5,8 @@
 export interface IndexData {
   generatedAt: string;
   weights: { mention: number; prominence: number; citation: number };
-  engines: Array<{ slug: string; name: string }>;
+  /** usesWeb is false for engines answering from model memory (no web search, so no citations). */
+  engines: Array<{ slug: string; name: string; usesWeb: boolean }>;
   categories: Array<{ slug: string; name: string; prompts: string[] }>;
   brands: Array<{ slug: string; name: string; category: string; domain: string | null }>;
   weeks: WeekInfo[];

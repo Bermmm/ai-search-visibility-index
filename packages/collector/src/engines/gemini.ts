@@ -1,41 +1,74 @@
-import { type Engine, SYSTEM_PROMPT, postJson } from "./types.js";
+import { type AdapterSpec, SYSTEM_PROMPT, num, postJson } from "./types.js";
 
-// Gemini generateContent with Google Search grounding.
-// https://ai.google.dev/gemini-api/docs/google-search
+// Gemini generateContent WITHOUT the google_search grounding tool.
+// Google's terms for Grounding with Google Search don't allow storing or analyzing grounded results,
+// so this engine measures what the model says from its own training ("model memory"), with no web
+// access. It therefore never has citations. https://ai.google.dev/gemini-api/docs/text-generation
 
 interface GeminiResponse {
   modelVersion?: string;
+  promptFeedback?: { blockReason?: string };
   candidates?: Array<{
-    content?: { parts?: Array<{ text?: string }> };
-    groundingMetadata?: {
-      groundingChunks?: Array<{ web?: { uri?: string; title?: string } }>;
-    };
+    finishReason?: string;
+    content?: { parts?: Array<{ text?: string; thought?: boolean }> };
   }>;
+  usageMetadata?: {
+    promptTokenCount?: number;
+    cachedContentTokenCount?: number;
+    candidatesTokenCount?: number;
+    thoughtsTokenCount?: number;
+  };
 }
 
-export const gemini: Engine = {
+export const gemini: AdapterSpec = {
   slug: "gemini",
-  name: "Gemini (Google)",
+  name: "Gemini (model memory, no web)",
   keyEnv: "GEMINI_API_KEY",
-  async ask(prompt, apiKey) {
-    const model = process.env.GEMINI_MODEL || "gemini-2.5-flash";
-    const data = await postJson<GeminiResponse>(
-      `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
-      { "x-goog-api-key": apiKey },
-      {
-        systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
-        contents: [{ role: "user", parts: [{ text: prompt }] }],
-        tools: [{ google_search: {} }],
+  usesWeb: false,
+  model: () => process.env.GEMINI_MODEL || "gemini-3.5-flash-lite",
+  create(apiKey) {
+    const model = this.model();
+    return {
+      slug: this.slug,
+      name: this.name,
+      model,
+      async run(prompt) {
+        const raw = await postJson<GeminiResponse>(
+          `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
+          { "x-goog-api-key": apiKey },
+          {
+            systemInstruction: { parts: [{ text: SYSTEM_PROMPT }] },
+            contents: [{ role: "user", parts: [{ text: prompt }] }],
+            // Deliberately no `tools`: no Google Search grounding.
+          },
+        );
+        const candidate = raw.candidates?.[0];
+        if (!candidate) throw new Error(`Gemini returned no answer (${raw.promptFeedback?.blockReason ?? "no candidates"})`);
+
+        const text = (candidate.content?.parts ?? [])
+          .filter((p) => !p.thought)
+          .map((p) => p.text ?? "")
+          .join("");
+        const u = raw.usageMetadata;
+        const thoughts = num(u?.thoughtsTokenCount);
+        const answerTokens = num(u?.candidatesTokenCount);
+
+        return {
+          text,
+          citations: [],
+          model: raw.modelVersion ?? model,
+          raw,
+          usage: {
+            inputTokens: num(u?.promptTokenCount),
+            cachedInputTokens: num(u?.cachedContentTokenCount),
+            // Thinking tokens are billed at the output rate.
+            outputTokens: answerTokens === null && thoughts === null ? null : (answerTokens ?? 0) + (thoughts ?? 0),
+            reasoningTokens: thoughts,
+            searchCalls: 0,
+            providerCostUsd: null,
+          },
+        };
       },
-    );
-
-    const candidate = data.candidates?.[0];
-    const text = (candidate?.content?.parts ?? []).map((p) => p.text ?? "").join("");
-    // Gemini returns redirect URLs; the title is usually the source's domain (see extract.ts).
-    const citations = (candidate?.groundingMetadata?.groundingChunks ?? [])
-      .filter((c) => c.web?.uri)
-      .map((c) => ({ url: c.web!.uri!, title: c.web?.title ?? null }));
-
-    return { model: data.modelVersion ?? model, text, citations };
+    };
   },
 };

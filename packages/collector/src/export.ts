@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { DB } from "./db.js";
+import { ADAPTERS } from "./engines/index.js";
 import type { IndexData, ScoreRow, SourceRow, WeekInfo } from "./export-types.js";
 import { WEIGHTS } from "./score.js";
 
@@ -11,7 +12,10 @@ const SOURCES_PER_GROUP = 10;
  * in the local database.
  */
 export function exportJson(db: DB, outDir: string): { file: string; weeks: number; scores: number } {
-  const engines = db.prepare<[], { slug: string; name: string }>("SELECT slug, name FROM engines ORDER BY id").all();
+  const engines = db
+    .prepare<[], { slug: string; name: string }>("SELECT slug, name FROM engines ORDER BY id")
+    .all()
+    .map((e) => ({ ...e, usesWeb: ADAPTERS.find((a) => a.slug === e.slug)?.usesWeb ?? true }));
   const categories = db
     .prepare<[], { id: number; slug: string; name: string }>("SELECT id, slug, name FROM categories ORDER BY id")
     .all()
@@ -30,14 +34,15 @@ export function exportJson(db: DB, outDir: string): { file: string; weeks: numbe
     )
     .all();
 
-  // A week is published once it has scores; use the run those scores came from.
+  // A week is published once it has scores; use the run those scores came from (same choice as score.ts).
   const weeks = db
     .prepare<[], { week: string; runId: number; isMock: number; collectedAt: string }>(
       `SELECT r.week, r.id AS runId, r.is_mock AS isMock, COALESCE(r.finished_at, r.started_at) AS collectedAt
        FROM runs r
        WHERE r.status = 'completed'
          AND r.week IN (SELECT DISTINCT week FROM weekly_scores)
-         AND r.id = (SELECT MAX(id) FROM runs r2 WHERE r2.week = r.week AND r2.status = 'completed')
+         AND r.id = (SELECT id FROM runs r2 WHERE r2.week = r.week AND r2.status = 'completed'
+                     ORDER BY r2.is_mock ASC, r2.id DESC LIMIT 1)
        ORDER BY r.week`,
     )
     .all()

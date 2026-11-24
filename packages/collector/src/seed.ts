@@ -1,7 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { DB } from "./db.js";
-import { ENGINES } from "./engines/index.js";
+import { ADAPTERS } from "./engines/index.js";
 import { SEED_DIR } from "./paths.js";
 
 interface SeedBrand {
@@ -61,7 +61,7 @@ export function seed(db: DB, file = path.join(SEED_DIR, "canada.json")): SeedSum
   const retirePrompt = db.prepare("UPDATE prompts SET active = 0 WHERE id = ?");
 
   db.transaction(() => {
-    for (const e of ENGINES) upsertEngine.run(e.slug, e.name);
+    for (const e of ADAPTERS) upsertEngine.run(e.slug, e.name);
 
     for (const cat of data.categories) {
       const { id: categoryId } = upsertCategory.get(cat.slug, cat.name) as { id: number };

@@ -1,4 +1,4 @@
-import type { EngineCitation } from "./engines/index.js";
+import type { Citation } from "./engines/index.js";
 
 export interface BrandMatcher {
   brandId: number;
@@ -42,7 +42,7 @@ export function findMentions(text: string, brands: BrandMatcher[]): FoundMention
 }
 
 /** Normalize cited URLs to domains and link them to tracked brands' own sites. */
-export function resolveCitations(citations: EngineCitation[], brands: BrandMatcher[]): FoundCitation[] {
+export function resolveCitations(citations: Citation[], brands: BrandMatcher[]): FoundCitation[] {
   const seen = new Set<string>();
   const out: FoundCitation[] = [];
   for (const c of citations) {
@@ -56,7 +56,7 @@ export function resolveCitations(citations: EngineCitation[], brands: BrandMatch
   return out;
 }
 
-export function citationDomain(c: EngineCitation): string | null {
+export function citationDomain(c: Citation): string | null {
   let host: string;
   try {
     host = new URL(c.url).hostname.toLowerCase();

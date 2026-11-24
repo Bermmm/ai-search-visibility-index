@@ -16,13 +16,14 @@ interface ResponseFact {
 }
 
 /**
- * Compute weekly_scores for a week from that week's latest completed run.
+ * Compute weekly_scores for a week from that week's latest completed run. A real run always wins over
+ * a mock run, so testing with --mock can never hide real data.
  * Produces one row per brand for each engine, plus a combined row (engine_id NULL).
  * Existing rows for the week are replaced.
  */
 export function score(db: DB, week: string): ScoreSummary {
   const run = db
-    .prepare<[string], RunRow>("SELECT * FROM runs WHERE week = ? AND status = 'completed' ORDER BY id DESC LIMIT 1")
+    .prepare<[string], RunRow>("SELECT * FROM runs WHERE week = ? AND status = 'completed' ORDER BY is_mock ASC, id DESC LIMIT 1")
     .get(week);
   if (!run) throw new Error(`No completed run for ${week}. Run \`aivi run\` first.`);
 

@@ -1,30 +1,67 @@
-import type { EngineAnswer } from "./types.js";
+import type { Adapter } from "./types.js";
+
+export interface MockBrand {
+  name: string;
+  domain: string | null;
+}
 
 /**
- * Fake answers for testing the pipeline without API keys (`aivi run --mock`).
- * Deterministic for a given (engine, prompt, week), so re-runs are reproducible.
- * Runs made this way are flagged is_mock = 1 and the site labels them as demo data.
+ * Fake adapter for testing the pipeline without API keys (`aivi run --mock`).
+ * Answers are deterministic for a given (engine, prompt, week, sample), cost nothing and are
+ * flagged is_mock = 1; the site labels those weeks as demo data.
  */
-export function mockAnswer(
-  engineSlug: string,
-  prompt: string,
+export function mockAdapter(
+  slug: string,
+  name: string,
   week: string,
-  brands: Array<{ name: string; domain: string | null }>,
-): EngineAnswer {
-  const rand = seeded(`${engineSlug}|${prompt}|${week}`);
-  const picked = [...brands].sort(() => rand() - 0.5).slice(0, 1 + Math.floor(rand() * Math.min(4, brands.length)));
+  brandsFor: (prompt: string) => MockBrand[],
+): Adapter {
+  const samples = new Map<string, number>();
+  return {
+    slug,
+    name,
+    model: "mock-1",
+    async run(prompt) {
+      const sample = (samples.get(prompt) ?? 0) + 1;
+      samples.set(prompt, sample);
+      const rand = seeded(`${slug}|${prompt}|${week}|${sample}`);
+      const brands = brandsFor(prompt);
+      const picked = [...brands]
+        .sort(() => rand() - 0.5)
+        .slice(0, 1 + Math.floor(rand() * Math.min(4, brands.length)));
 
-  const text =
-    picked.length === 0
-      ? "It depends on your needs; compare a few options before deciding."
-      : `Popular options in Canada include ${picked.map((b) => b.name).join(", ")}. Compare fees and reviews before choosing.`;
+      const text =
+        picked.length === 0
+          ? "It depends on your needs; compare a few options before deciding."
+          : `Popular options in Canada include ${picked.map((b) => b.name).join(", ")}. Compare fees and reviews before choosing.`;
 
-  const citations = picked
-    .filter((b) => b.domain && rand() < 0.5)
-    .map((b) => ({ url: `https://www.${b.domain}/`, title: b.name }));
-  citations.push({ url: "https://www.example-review-site.ca/best-picks", title: "Example review site" });
+      const citations =
+        slug === "gemini"
+          ? [] // mirrors the real Gemini adapter: no web, no citations
+          : [
+              ...picked
+                .filter((b) => b.domain && rand() < 0.5)
+                .map((b) => ({ url: `https://www.${b.domain}/`, title: b.name })),
+              { url: "https://www.example-review-site.ca/best-picks", title: "Example review site" },
+            ];
 
-  return { model: "mock-1", text, citations };
+      const raw = { mock: true, text };
+      return {
+        text,
+        citations,
+        model: "mock-1",
+        raw,
+        usage: {
+          inputTokens: 0,
+          cachedInputTokens: 0,
+          outputTokens: 0,
+          reasoningTokens: 0,
+          searchCalls: 0,
+          providerCostUsd: 0,
+        },
+      };
+    },
+  };
 }
 
 // Small string-seeded PRNG (mulberry32 over an FNV-1a hash).

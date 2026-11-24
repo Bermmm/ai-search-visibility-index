@@ -1,8 +1,8 @@
 import { gemini } from "./gemini.js";
 import { openai } from "./openai.js";
 import { perplexity } from "./perplexity.js";
-import type { Engine } from "./types.js";
+import type { AdapterSpec } from "./types.js";
 
-export const ENGINES: readonly Engine[] = [openai, perplexity, gemini];
+export const ADAPTERS: readonly AdapterSpec[] = [openai, perplexity, gemini];
 
-export type { Engine, EngineAnswer, EngineCitation } from "./types.js";
+export type { Adapter, AdapterSpec, Citation, RunResult, Usage } from "./types.js";
