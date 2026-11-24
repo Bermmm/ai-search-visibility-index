@@ -1,0 +1,107 @@
+{
+  "categories": [
+    {
+      "slug": "banking",
+      "name": "Banking",
+      "brands": [
+        { "slug": "rbc", "name": "RBC", "domain": "rbc.com", "aliases": ["Royal Bank of Canada", "Royal Bank", "RBC Royal Bank"] },
+        { "slug": "td", "name": "TD", "domain": "td.com", "aliases": ["TD Bank", "TD Canada Trust"] },
+        { "slug": "scotiabank", "name": "Scotiabank", "domain": "scotiabank.com", "aliases": ["Bank of Nova Scotia"] },
+        { "slug": "bmo", "name": "BMO", "domain": "bmo.com", "aliases": ["Bank of Montreal"] },
+        { "slug": "cibc", "name": "CIBC", "domain": "cibc.com", "aliases": ["Canadian Imperial Bank of Commerce"] },
+        { "slug": "national-bank", "name": "National Bank", "domain": "nbc.ca", "aliases": ["National Bank of Canada"] },
+        { "slug": "tangerine", "name": "Tangerine", "domain": "tangerine.ca", "aliases": [] },
+        { "slug": "eq-bank", "name": "EQ Bank", "domain": "eqbank.ca", "aliases": [] },
+        { "slug": "simplii", "name": "Simplii", "domain": "simplii.com", "aliases": ["Simplii Financial"] }
+      ],
+      "prompts": [
+        "What is the best bank in Canada for everyday chequing?",
+        "Which Canadian bank has the lowest monthly fees?",
+        "What's the best high-interest savings account in Canada right now?",
+        "Which bank should a newcomer to Canada open an account with?"
+      ]
+    },
+    {
+      "slug": "telecom",
+      "name": "Mobile & Internet",
+      "brands": [
+        { "slug": "rogers", "name": "Rogers", "domain": "rogers.com", "aliases": [] },
+        { "slug": "bell", "name": "Bell", "domain": "bell.ca", "aliases": ["Bell Canada"] },
+        { "slug": "telus", "name": "Telus", "domain": "telus.com", "aliases": ["TELUS"] },
+        { "slug": "freedom-mobile", "name": "Freedom Mobile", "domain": "freedommobile.ca", "aliases": [] },
+        { "slug": "fido", "name": "Fido", "domain": "fido.ca", "aliases": [] },
+        { "slug": "koodo", "name": "Koodo", "domain": "koodomobile.com", "aliases": ["Koodo Mobile"] },
+        { "slug": "virgin-plus", "name": "Virgin Plus", "domain": "virginplus.ca", "aliases": ["Virgin Mobile"] },
+        { "slug": "public-mobile", "name": "Public Mobile", "domain": "publicmobile.ca", "aliases": [] },
+        { "slug": "videotron", "name": "Vidéotron", "domain": "videotron.com", "aliases": ["Videotron"] },
+        { "slug": "fizz", "name": "Fizz", "domain": "fizz.ca", "aliases": [] }
+      ],
+      "prompts": [
+        "What is the best cell phone plan in Canada?",
+        "Which Canadian carrier has the best network coverage?",
+        "What's the cheapest unlimited data plan in Canada?",
+        "Who is the best home internet provider in Canada?"
+      ]
+    },
+    {
+      "slug": "grocery",
+      "name": "Grocery",
+      "brands": [
+        { "slug": "loblaws", "name": "Loblaws", "domain": "loblaws.ca", "aliases": ["Loblaw"] },
+        { "slug": "real-canadian-superstore", "name": "Real Canadian Superstore", "domain": "realcanadiansuperstore.ca", "aliases": ["Superstore"] },
+        { "slug": "no-frills", "name": "No Frills", "domain": "nofrills.ca", "aliases": [] },
+        { "slug": "sobeys", "name": "Sobeys", "domain": "sobeys.com", "aliases": [] },
+        { "slug": "freshco", "name": "FreshCo", "domain": "freshco.com", "aliases": [] },
+        { "slug": "metro", "name": "Metro", "domain": "metro.ca", "aliases": [] },
+        { "slug": "food-basics", "name": "Food Basics", "domain": "foodbasics.ca", "aliases": [] },
+        { "slug": "save-on-foods", "name": "Save-On-Foods", "domain": "saveonfoods.com", "aliases": ["Save On Foods"] },
+        { "slug": "walmart", "name": "Walmart", "domain": "walmart.ca", "aliases": [] },
+        { "slug": "costco", "name": "Costco", "domain": "costco.ca", "aliases": [] }
+      ],
+      "prompts": [
+        "Where is the cheapest place to buy groceries in Canada?",
+        "What is the best grocery store in Canada for fresh produce?",
+        "Which Canadian grocery store has the best loyalty program?",
+        "Where should I do my weekly grocery shopping in Canada to save money?"
+      ]
+    },
+    {
+      "slug": "airlines",
+      "name": "Airlines",
+      "brands": [
+        { "slug": "air-canada", "name": "Air Canada", "domain": "aircanada.com", "aliases": [] },
+        { "slug": "westjet", "name": "WestJet", "domain": "westjet.com", "aliases": [] },
+        { "slug": "porter", "name": "Porter Airlines", "domain": "flyporter.com", "aliases": ["Porter"] },
+        { "slug": "flair", "name": "Flair Airlines", "domain": "flyflair.com", "aliases": ["Flair"] },
+        { "slug": "air-transat", "name": "Air Transat", "domain": "airtransat.com", "aliases": ["Transat"] },
+        { "slug": "sunwing", "name": "Sunwing", "domain": "sunwing.ca", "aliases": [] }
+      ],
+      "prompts": [
+        "What is the best airline in Canada?",
+        "Which Canadian airline is the cheapest for domestic flights?",
+        "What's the most reliable airline for flying within Canada?",
+        "Which airline should I choose for a flight from Toronto to Vancouver?"
+      ]
+    },
+    {
+      "slug": "insurance",
+      "name": "Insurance",
+      "brands": [
+        { "slug": "intact", "name": "Intact", "domain": "intact.ca", "aliases": ["Intact Insurance"] },
+        { "slug": "desjardins", "name": "Desjardins", "domain": "desjardins.com", "aliases": [] },
+        { "slug": "td-insurance", "name": "TD Insurance", "domain": "tdinsurance.com", "aliases": [] },
+        { "slug": "belairdirect", "name": "belairdirect", "domain": "belairdirect.com", "aliases": ["Belairdirect", "Belair Direct"] },
+        { "slug": "aviva", "name": "Aviva", "domain": "aviva.ca", "aliases": ["Aviva Canada"] },
+        { "slug": "sonnet", "name": "Sonnet", "domain": "sonnet.ca", "aliases": ["Sonnet Insurance"] },
+        { "slug": "allstate", "name": "Allstate", "domain": "allstate.ca", "aliases": ["Allstate Canada"] },
+        { "slug": "cooperators", "name": "Co-operators", "domain": "cooperators.ca", "aliases": ["The Co-operators"] }
+      ],
+      "prompts": [
+        "What is the best car insurance company in Canada?",
+        "Who has the cheapest home insurance in Canada?",
+        "Which Canadian insurance company has the best customer service for claims?",
+        "What's the best tenant insurance in Canada?"
+      ]
+    }
+  ]
+}
