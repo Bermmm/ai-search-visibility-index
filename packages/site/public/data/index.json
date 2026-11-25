@@ -1,0 +1,3537 @@
+{
+  "generatedAt": "2026-11-25T19:47:59.203Z",
+  "weights": {
+    "mention": 0.6,
+    "prominence": 0.2,
+    "citation": 0.2
+  },
+  "engines": [
+    {
+      "slug": "openai",
+      "name": "ChatGPT (OpenAI)",
+      "usesWeb": true
+    },
+    {
+      "slug": "perplexity",
+      "name": "Perplexity",
+      "usesWeb": true
+    },
+    {
+      "slug": "gemini",
+      "name": "Gemini (model memory, no web)",
+      "usesWeb": false
+    }
+  ],
+  "categories": [
+    {
+      "slug": "banking",
+      "name": "Banking",
+      "prompts": [
+        "What is the best bank in Canada for everyday chequing?",
+        "Which Canadian bank has the lowest monthly fees?",
+        "What's the best high-interest savings account in Canada right now?",
+        "Which bank should a newcomer to Canada open an account with?"
+      ]
+    },
+    {
+      "slug": "telecom",
+      "name": "Mobile & Internet",
+      "prompts": [
+        "What is the best cell phone plan in Canada?",
+        "Which Canadian carrier has the best network coverage?",
+        "What's the cheapest unlimited data plan in Canada?",
+        "Who is the best home internet provider in Canada?"
+      ]
+    },
+    {
+      "slug": "grocery",
+      "name": "Grocery",
+      "prompts": [
+        "Where is the cheapest place to buy groceries in Canada?",
+        "What is the best grocery store in Canada for fresh produce?",
+        "Which Canadian grocery store has the best loyalty program?",
+        "Where should I do my weekly grocery shopping in Canada to save money?"
+      ]
+    },
+    {
+      "slug": "airlines",
+      "name": "Airlines",
+      "prompts": [
+        "What is the best airline in Canada?",
+        "Which Canadian airline is the cheapest for domestic flights?",
+        "What's the most reliable airline for flying within Canada?",
+        "Which airline should I choose for a flight from Toronto to Vancouver?"
+      ]
+    },
+    {
+      "slug": "insurance",
+      "name": "Insurance",
+      "prompts": [
+        "What is the best car insurance company in Canada?",
+        "Who has the cheapest home insurance in Canada?",
+        "Which Canadian insurance company has the best customer service for claims?",
+        "What's the best tenant insurance in Canada?"
+      ]
+    }
+  ],
+  "brands": [
+    {
+      "slug": "bmo",
+      "name": "BMO",
+      "category": "banking",
+      "domain": "bmo.com"
+    },
+    {
+      "slug": "cibc",
+      "name": "CIBC",
+      "category": "banking",
+      "domain": "cibc.com"
+    },
+    {
+      "slug": "eq-bank",
+      "name": "EQ Bank",
+      "category": "banking",
+      "domain": "eqbank.ca"
+    },
+    {
+      "slug": "national-bank",
+      "name": "National Bank",
+      "category": "banking",
+      "domain": "nbc.ca"
+    },
+    {
+      "slug": "rbc",
+      "name": "RBC",
+      "category": "banking",
+      "domain": "rbc.com"
+    },
+    {
+      "slug": "scotiabank",
+      "name": "Scotiabank",
+      "category": "banking",
+      "domain": "scotiabank.com"
+    },
+    {
+      "slug": "simplii",
+      "name": "Simplii",
+      "category": "banking",
+      "domain": "simplii.com"
+    },
+    {
+      "slug": "td",
+      "name": "TD",
+      "category": "banking",
+      "domain": "td.com"
+    },
+    {
+      "slug": "tangerine",
+      "name": "Tangerine",
+      "category": "banking",
+      "domain": "tangerine.ca"
+    },
+    {
+      "slug": "bell",
+      "name": "Bell",
+      "category": "telecom",
+      "domain": "bell.ca"
+    },
+    {
+      "slug": "fido",
+      "name": "Fido",
+      "category": "telecom",
+      "domain": "fido.ca"
+    },
+    {
+      "slug": "fizz",
+      "name": "Fizz",
+      "category": "telecom",
+      "domain": "fizz.ca"
+    },
+    {
+      "slug": "freedom-mobile",
+      "name": "Freedom Mobile",
+      "category": "telecom",
+      "domain": "freedommobile.ca"
+    },
+    {
+      "slug": "koodo",
+      "name": "Koodo",
+      "category": "telecom",
+      "domain": "koodomobile.com"
+    },
+    {
+      "slug": "public-mobile",
+      "name": "Public Mobile",
+      "category": "telecom",
+      "domain": "publicmobile.ca"
+    },
+    {
+      "slug": "rogers",
+      "name": "Rogers",
+      "category": "telecom",
+      "domain": "rogers.com"
+    },
+    {
+      "slug": "telus",
+      "name": "Telus",
+      "category": "telecom",
+      "domain": "telus.com"
+    },
+    {
+      "slug": "videotron",
+      "name": "Vidéotron",
+      "category": "telecom",
+      "domain": "videotron.com"
+    },
+    {
+      "slug": "virgin-plus",
+      "name": "Virgin Plus",
+      "category": "telecom",
+      "domain": "virginplus.ca"
+    },
+    {
+      "slug": "costco",
+      "name": "Costco",
+      "category": "grocery",
+      "domain": "costco.ca"
+    },
+    {
+      "slug": "food-basics",
+      "name": "Food Basics",
+      "category": "grocery",
+      "domain": "foodbasics.ca"
+    },
+    {
+      "slug": "freshco",
+      "name": "FreshCo",
+      "category": "grocery",
+      "domain": "freshco.com"
+    },
+    {
+      "slug": "loblaws",
+      "name": "Loblaws",
+      "category": "grocery",
+      "domain": "loblaws.ca"
+    },
+    {
+      "slug": "metro",
+      "name": "Metro",
+      "category": "grocery",
+      "domain": "metro.ca"
+    },
+    {
+      "slug": "no-frills",
+      "name": "No Frills",
+      "category": "grocery",
+      "domain": "nofrills.ca"
+    },
+    {
+      "slug": "real-canadian-superstore",
+      "name": "Real Canadian Superstore",
+      "category": "grocery",
+      "domain": "realcanadiansuperstore.ca"
+    },
+    {
+      "slug": "save-on-foods",
+      "name": "Save-On-Foods",
+      "category": "grocery",
+      "domain": "saveonfoods.com"
+    },
+    {
+      "slug": "sobeys",
+      "name": "Sobeys",
+      "category": "grocery",
+      "domain": "sobeys.com"
+    },
+    {
+      "slug": "walmart",
+      "name": "Walmart",
+      "category": "grocery",
+      "domain": "walmart.ca"
+    },
+    {
+      "slug": "air-canada",
+      "name": "Air Canada",
+      "category": "airlines",
+      "domain": "aircanada.com"
+    },
+    {
+      "slug": "air-transat",
+      "name": "Air Transat",
+      "category": "airlines",
+      "domain": "airtransat.com"
+    },
+    {
+      "slug": "flair",
+      "name": "Flair Airlines",
+      "category": "airlines",
+      "domain": "flyflair.com"
+    },
+    {
+      "slug": "porter",
+      "name": "Porter Airlines",
+      "category": "airlines",
+      "domain": "flyporter.com"
+    },
+    {
+      "slug": "sunwing",
+      "name": "Sunwing",
+      "category": "airlines",
+      "domain": "sunwing.ca"
+    },
+    {
+      "slug": "westjet",
+      "name": "WestJet",
+      "category": "airlines",
+      "domain": "westjet.com"
+    },
+    {
+      "slug": "allstate",
+      "name": "Allstate",
+      "category": "insurance",
+      "domain": "allstate.ca"
+    },
+    {
+      "slug": "aviva",
+      "name": "Aviva",
+      "category": "insurance",
+      "domain": "aviva.ca"
+    },
+    {
+      "slug": "cooperators",
+      "name": "Co-operators",
+      "category": "insurance",
+      "domain": "cooperators.ca"
+    },
+    {
+      "slug": "desjardins",
+      "name": "Desjardins",
+      "category": "insurance",
+      "domain": "desjardins.com"
+    },
+    {
+      "slug": "intact",
+      "name": "Intact",
+      "category": "insurance",
+      "domain": "intact.ca"
+    },
+    {
+      "slug": "sonnet",
+      "name": "Sonnet",
+      "category": "insurance",
+      "domain": "sonnet.ca"
+    },
+    {
+      "slug": "td-insurance",
+      "name": "TD Insurance",
+      "category": "insurance",
+      "domain": "tdinsurance.com"
+    },
+    {
+      "slug": "belairdirect",
+      "name": "belairdirect",
+      "category": "insurance",
+      "domain": "belairdirect.com"
+    }
+  ],
+  "weeks": [
+    {
+      "week": "2026-W48",
+      "runId": 3,
+      "isMock": true,
+      "collectedAt": "2026-11-25T19:47:57.483Z"
+    }
+  ],
+  "scores": [
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "national-bank",
+      "rank": 1,
+      "score": 28.9,
+      "responses": 24,
+      "mentionRate": 0.375,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.2777777777777778,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "bmo",
+      "rank": 2,
+      "score": 26.4,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 1.8571428571428572,
+      "prominence": 0.19444444444444445,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "rbc",
+      "rank": 3,
+      "score": 25.5,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 1.7142857142857142,
+      "prominence": 0.23263888888888892,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "cibc",
+      "rank": 4,
+      "score": 25.4,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 1.875,
+      "prominence": 0.22916666666666666,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "td",
+      "rank": 5,
+      "score": 24.2,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 2.142857142857143,
+      "prominence": 0.17013888888888892,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "eq-bank",
+      "rank": 6,
+      "score": 24,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 2.142857142857143,
+      "prominence": 0.15625,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "scotiabank",
+      "rank": 7,
+      "score": 19.9,
+      "responses": 24,
+      "mentionRate": 0.25,
+      "avgPosition": 1.8333333333333333,
+      "prominence": 0.15972222222222224,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "tangerine",
+      "rank": 8,
+      "score": 13.3,
+      "responses": 24,
+      "mentionRate": 0.16666666666666666,
+      "avgPosition": 1.5,
+      "prominence": 0.125,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "brand": "simplii",
+      "rank": 9,
+      "score": 7.2,
+      "responses": 24,
+      "mentionRate": 0.08333333333333333,
+      "avgPosition": 3,
+      "prominence": 0.027777777777777776,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "telus",
+      "rank": 1,
+      "score": 27.6,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2,
+      "prominence": 0.21180555555555555,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "freedom-mobile",
+      "rank": 2,
+      "score": 27,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2.25,
+      "prominence": 0.1840277777777778,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "public-mobile",
+      "rank": 3,
+      "score": 26.1,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 1.5714285714285714,
+      "prominence": 0.2222222222222222,
+      "citationRate": 0.20833333333333334
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "bell",
+      "rank": 4,
+      "score": 25,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2.25,
+      "prominence": 0.16666666666666666,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "koodo",
+      "rank": 5,
+      "score": 17.7,
+      "responses": 24,
+      "mentionRate": 0.20833333333333334,
+      "avgPosition": 1.6,
+      "prominence": 0.17708333333333334,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "rogers",
+      "rank": 6,
+      "score": 14.2,
+      "responses": 24,
+      "mentionRate": 0.16666666666666666,
+      "avgPosition": 1,
+      "prominence": 0.16666666666666666,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "virgin-plus",
+      "rank": 7,
+      "score": 13.7,
+      "responses": 24,
+      "mentionRate": 0.16666666666666666,
+      "avgPosition": 1.25,
+      "prominence": 0.14583333333333334,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "fido",
+      "rank": 8,
+      "score": 12.5,
+      "responses": 24,
+      "mentionRate": 0.16666666666666666,
+      "avgPosition": 2.5,
+      "prominence": 0.08333333333333333,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "fizz",
+      "rank": 9,
+      "score": 11.2,
+      "responses": 24,
+      "mentionRate": 0.125,
+      "avgPosition": 1.3333333333333333,
+      "prominence": 0.10416666666666667,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "brand": "videotron",
+      "rank": 10,
+      "score": 9.3,
+      "responses": 24,
+      "mentionRate": 0.125,
+      "avgPosition": 2.6666666666666665,
+      "prominence": 0.048611111111111105,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "loblaws",
+      "rank": 1,
+      "score": 27.9,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 1.625,
+      "prominence": 0.22916666666666666,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "metro",
+      "rank": 2,
+      "score": 26.8,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 1.625,
+      "prominence": 0.2569444444444444,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "real-canadian-superstore",
+      "rank": 3,
+      "score": 25.6,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2.5,
+      "prominence": 0.1527777777777778,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "sobeys",
+      "rank": 4,
+      "score": 24.8,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2,
+      "prominence": 0.19791666666666666,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "no-frills",
+      "rank": 5,
+      "score": 24.4,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2.375,
+      "prominence": 0.18055555555555555,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "food-basics",
+      "rank": 6,
+      "score": 20.4,
+      "responses": 24,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "save-on-foods",
+      "rank": 7,
+      "score": 17.8,
+      "responses": 24,
+      "mentionRate": 0.20833333333333334,
+      "avgPosition": 1.4,
+      "prominence": 0.18055555555555558,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "freshco",
+      "rank": 8,
+      "score": 13.3,
+      "responses": 24,
+      "mentionRate": 0.16666666666666666,
+      "avgPosition": 2.5,
+      "prominence": 0.08333333333333333,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "walmart",
+      "rank": 9,
+      "score": 13.1,
+      "responses": 24,
+      "mentionRate": 0.16666666666666666,
+      "avgPosition": 2,
+      "prominence": 0.11458333333333333,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "brand": "costco",
+      "rank": 10,
+      "score": 11.7,
+      "responses": 24,
+      "mentionRate": 0.16666666666666666,
+      "avgPosition": 2.5,
+      "prominence": 0.08333333333333333,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "brand": "air-canada",
+      "rank": 1,
+      "score": 43,
+      "responses": 24,
+      "mentionRate": 0.5416666666666666,
+      "avgPosition": 1.6923076923076923,
+      "prominence": 0.3993055555555556,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "brand": "flair",
+      "rank": 2,
+      "score": 35.1,
+      "responses": 24,
+      "mentionRate": 0.4583333333333333,
+      "avgPosition": 1.6363636363636365,
+      "prominence": 0.34027777777777773,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "brand": "sunwing",
+      "rank": 3,
+      "score": 26.5,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2.25,
+      "prominence": 0.20138888888888887,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "brand": "westjet",
+      "rank": 4,
+      "score": 26.4,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2,
+      "prominence": 0.19444444444444442,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "brand": "air-transat",
+      "rank": 5,
+      "score": 24,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 2.4285714285714284,
+      "prominence": 0.15625,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "brand": "porter",
+      "rank": 6,
+      "score": 19.9,
+      "responses": 24,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.20138888888888892,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "td-insurance",
+      "rank": 1,
+      "score": 40,
+      "responses": 24,
+      "mentionRate": 0.5,
+      "avgPosition": 1.75,
+      "prominence": 0.375,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "belairdirect",
+      "rank": 2,
+      "score": 35.8,
+      "responses": 24,
+      "mentionRate": 0.4583333333333333,
+      "avgPosition": 2.1818181818181817,
+      "prominence": 0.2881944444444444,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "intact",
+      "rank": 3,
+      "score": 30.8,
+      "responses": 24,
+      "mentionRate": 0.375,
+      "avgPosition": 2,
+      "prominence": 0.2465277777777778,
+      "citationRate": 0.16666666666666666
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "cooperators",
+      "rank": 4,
+      "score": 25.6,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2,
+      "prominence": 0.19444444444444445,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "desjardins",
+      "rank": 5,
+      "score": 24.4,
+      "responses": 24,
+      "mentionRate": 0.3333333333333333,
+      "avgPosition": 2.375,
+      "prominence": 0.18055555555555555,
+      "citationRate": 0.041666666666666664
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "allstate",
+      "rank": 6,
+      "score": 22.8,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 2.4285714285714284,
+      "prominence": 0.1423611111111111,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "aviva",
+      "rank": 7,
+      "score": 22.6,
+      "responses": 24,
+      "mentionRate": 0.2916666666666667,
+      "avgPosition": 2,
+      "prominence": 0.17361111111111113,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "brand": "sonnet",
+      "rank": 8,
+      "score": 16.2,
+      "responses": 24,
+      "mentionRate": 0.20833333333333334,
+      "avgPosition": 2.6,
+      "prominence": 0.10069444444444443,
+      "citationRate": 0.08333333333333333
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "cibc",
+      "rank": 1,
+      "score": 38.8,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 1.25,
+      "prominence": 0.4375,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "rbc",
+      "rank": 2,
+      "score": 30,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1,
+      "prominence": 0.375,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "eq-bank",
+      "rank": 3,
+      "score": 27.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.25,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "scotiabank",
+      "rank": 4,
+      "score": 18.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2,
+      "prominence": 0.16666666666666666,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "td",
+      "rank": 5,
+      "score": 8.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "tangerine",
+      "rank": 5,
+      "score": 8.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "bmo",
+      "rank": 7,
+      "score": 8.3,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "national-bank",
+      "rank": 8,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "banking",
+      "brand": "simplii",
+      "rank": 8,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "rogers",
+      "rank": 1,
+      "score": 30,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1,
+      "prominence": 0.375,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "fido",
+      "rank": 2,
+      "score": 26.7,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.3333333333333335,
+      "prominence": 0.20833333333333331,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "virgin-plus",
+      "rank": 3,
+      "score": 18.8,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "telus",
+      "rank": 4,
+      "score": 18.1,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2.5,
+      "prominence": 0.15625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "koodo",
+      "rank": 5,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "public-mobile",
+      "rank": 5,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "bell",
+      "rank": 7,
+      "score": 8.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "videotron",
+      "rank": 7,
+      "score": 8.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "freedom-mobile",
+      "rank": 9,
+      "score": 8.1,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 4,
+      "prominence": 0.03125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "telecom",
+      "brand": "fizz",
+      "rank": 10,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "metro",
+      "rank": 1,
+      "score": 36.7,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2,
+      "prominence": 0.3333333333333333,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "costco",
+      "rank": 2,
+      "score": 26.7,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.3333333333333335,
+      "prominence": 0.20833333333333331,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "sobeys",
+      "rank": 3,
+      "score": 25.6,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.6666666666666665,
+      "prominence": 0.15625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "save-on-foods",
+      "rank": 4,
+      "score": 20,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "loblaws",
+      "rank": 5,
+      "score": 18.8,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "food-basics",
+      "rank": 6,
+      "score": 17.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "freshco",
+      "rank": 7,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "walmart",
+      "rank": 7,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "no-frills",
+      "rank": 9,
+      "score": 8.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "grocery",
+      "brand": "real-canadian-superstore",
+      "rank": 10,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "airlines",
+      "brand": "flair",
+      "rank": 1,
+      "score": 37.5,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 1.5,
+      "prominence": 0.375,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "airlines",
+      "brand": "air-canada",
+      "rank": 2,
+      "score": 36.5,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2.25,
+      "prominence": 0.3229166666666667,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "airlines",
+      "brand": "westjet",
+      "rank": 3,
+      "score": 35.8,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2,
+      "prominence": 0.29166666666666663,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "airlines",
+      "brand": "porter",
+      "rank": 4,
+      "score": 28.3,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.29166666666666663,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "airlines",
+      "brand": "sunwing",
+      "rank": 5,
+      "score": 26.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.6666666666666665,
+      "prominence": 0.19791666666666666,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "airlines",
+      "brand": "air-transat",
+      "rank": 6,
+      "score": 8.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "td-insurance",
+      "rank": 1,
+      "score": 40,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 1,
+      "prominence": 0.5,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "cooperators",
+      "rank": 2,
+      "score": 34.2,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2.5,
+      "prominence": 0.20833333333333331,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "aviva",
+      "rank": 3,
+      "score": 27.1,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2,
+      "prominence": 0.22916666666666666,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "desjardins",
+      "rank": 4,
+      "score": 25,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 3.3333333333333335,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "intact",
+      "rank": 5,
+      "score": 18.8,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "sonnet",
+      "rank": 5,
+      "score": 18.8,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "belairdirect",
+      "rank": 7,
+      "score": 16.7,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 3,
+      "prominence": 0.08333333333333333,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "gemini",
+      "category": "insurance",
+      "brand": "allstate",
+      "rank": 8,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "td",
+      "rank": 1,
+      "score": 44.6,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 1.75,
+      "prominence": 0.3541666666666667,
+      "citationRate": 0.375
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "national-bank",
+      "rank": 2,
+      "score": 27.1,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2,
+      "prominence": 0.22916666666666666,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "bmo",
+      "rank": 3,
+      "score": 25,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "rbc",
+      "rank": 4,
+      "score": 23.1,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2.5,
+      "prominence": 0.15625,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "eq-bank",
+      "rank": 5,
+      "score": 21.9,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 3,
+      "prominence": 0.09375,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "scotiabank",
+      "rank": 6,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "tangerine",
+      "rank": 6,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "simplii",
+      "rank": 8,
+      "score": 10.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "brand": "cibc",
+      "rank": 9,
+      "score": 8.3,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "telus",
+      "rank": 1,
+      "score": 45,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 1.5,
+      "prominence": 0.375,
+      "citationRate": 0.375
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "bell",
+      "rank": 2,
+      "score": 27.1,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2,
+      "prominence": 0.22916666666666666,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "koodo",
+      "rank": 3,
+      "score": 22.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "videotron",
+      "rank": 4,
+      "score": 19.2,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 3,
+      "prominence": 0.08333333333333333,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "fizz",
+      "rank": 5,
+      "score": 11.2,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "fido",
+      "rank": 6,
+      "score": 10.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "freedom-mobile",
+      "rank": 7,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "virgin-plus",
+      "rank": 7,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "public-mobile",
+      "rank": 7,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "brand": "rogers",
+      "rank": 10,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "real-canadian-superstore",
+      "rank": 1,
+      "score": 39.2,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2.5,
+      "prominence": 0.20833333333333331,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "loblaws",
+      "rank": 2,
+      "score": 33.8,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1.3333333333333333,
+      "prominence": 0.3125,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "sobeys",
+      "rank": 3,
+      "score": 27.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.25,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "no-frills",
+      "rank": 4,
+      "score": 26.9,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.3333333333333335,
+      "prominence": 0.21875,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "metro",
+      "rank": 5,
+      "score": 22.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "food-basics",
+      "rank": 5,
+      "score": 22.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "walmart",
+      "rank": 7,
+      "score": 8.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 2,
+      "prominence": 0.0625,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "freshco",
+      "rank": 8,
+      "score": 8.3,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "save-on-foods",
+      "rank": 8,
+      "score": 8.3,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "brand": "costco",
+      "rank": 8,
+      "score": 8.3,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "brand": "air-canada",
+      "rank": 1,
+      "score": 60,
+      "responses": 8,
+      "mentionRate": 0.75,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.5,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "brand": "flair",
+      "rank": 2,
+      "score": 47.9,
+      "responses": 8,
+      "mentionRate": 0.625,
+      "avgPosition": 2,
+      "prominence": 0.3958333333333333,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "brand": "sunwing",
+      "rank": 3,
+      "score": 31.9,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.3333333333333335,
+      "prominence": 0.21875,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "brand": "air-transat",
+      "rank": 4,
+      "score": 31.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.6666666666666665,
+      "prominence": 0.19791666666666666,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "brand": "westjet",
+      "rank": 5,
+      "score": 20.8,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2,
+      "prominence": 0.16666666666666666,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "brand": "porter",
+      "rank": 6,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "belairdirect",
+      "rank": 1,
+      "score": 49,
+      "responses": 8,
+      "mentionRate": 0.625,
+      "avgPosition": 2,
+      "prominence": 0.44791666666666663,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "intact",
+      "rank": 2,
+      "score": 42.1,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 1.75,
+      "prominence": 0.3541666666666667,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "cooperators",
+      "rank": 3,
+      "score": 32.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.25,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "allstate",
+      "rank": 4,
+      "score": 30.2,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 3,
+      "prominence": 0.13541666666666666,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "td-insurance",
+      "rank": 5,
+      "score": 30,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.25,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "desjardins",
+      "rank": 6,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "aviva",
+      "rank": 7,
+      "score": 8.3,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "brand": "sonnet",
+      "rank": 7,
+      "score": 8.3,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "national-bank",
+      "rank": 1,
+      "score": 59.6,
+      "responses": 8,
+      "mentionRate": 0.75,
+      "avgPosition": 1.5,
+      "prominence": 0.6041666666666667,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "bmo",
+      "rank": 2,
+      "score": 45.8,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2,
+      "prominence": 0.29166666666666663,
+      "citationRate": 0.5
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "cibc",
+      "rank": 3,
+      "score": 29.2,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.3333333333333335,
+      "prominence": 0.20833333333333331,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "rbc",
+      "rank": 4,
+      "score": 23.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2,
+      "prominence": 0.16666666666666666,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "eq-bank",
+      "rank": 5,
+      "score": 22.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2,
+      "prominence": 0.125,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "scotiabank",
+      "rank": 6,
+      "score": 20,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2,
+      "prominence": 0.125,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "td",
+      "rank": 7,
+      "score": 19.4,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 3,
+      "prominence": 0.09375,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "simplii",
+      "rank": 8,
+      "score": 10.8,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 3,
+      "prominence": 0.041666666666666664,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "brand": "tangerine",
+      "rank": 9,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "freedom-mobile",
+      "rank": 1,
+      "score": 62.9,
+      "responses": 8,
+      "mentionRate": 0.75,
+      "avgPosition": 2.1666666666666665,
+      "prominence": 0.3958333333333333,
+      "citationRate": 0.5
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "public-mobile",
+      "rank": 2,
+      "score": 58.3,
+      "responses": 8,
+      "mentionRate": 0.625,
+      "avgPosition": 1.8,
+      "prominence": 0.4166666666666667,
+      "citationRate": 0.625
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "bell",
+      "rank": 3,
+      "score": 39.2,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2.5,
+      "prominence": 0.20833333333333331,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "fizz",
+      "rank": 4,
+      "score": 22.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "koodo",
+      "rank": 5,
+      "score": 20.6,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2.5,
+      "prominence": 0.15625,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "telus",
+      "rank": 6,
+      "score": 19.6,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2.5,
+      "prominence": 0.10416666666666666,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "rogers",
+      "rank": 7,
+      "score": 12.5,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "virgin-plus",
+      "rank": 7,
+      "score": 12.5,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "fido",
+      "rank": 9,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "brand": "videotron",
+      "rank": 9,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "no-frills",
+      "rank": 1,
+      "score": 37.7,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2.5,
+      "prominence": 0.2604166666666667,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "real-canadian-superstore",
+      "rank": 2,
+      "score": 37.5,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2.5,
+      "prominence": 0.24999999999999997,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "loblaws",
+      "rank": 3,
+      "score": 31.2,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2,
+      "prominence": 0.1875,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "save-on-foods",
+      "rank": 4,
+      "score": 25,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "freshco",
+      "rank": 5,
+      "score": 21.7,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 3,
+      "prominence": 0.08333333333333333,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "sobeys",
+      "rank": 6,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "metro",
+      "rank": 6,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "food-basics",
+      "rank": 6,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "walmart",
+      "rank": 9,
+      "score": 20.6,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2.5,
+      "prominence": 0.15625,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "brand": "costco",
+      "rank": 10,
+      "score": 0,
+      "responses": 8,
+      "mentionRate": 0,
+      "avgPosition": null,
+      "prominence": 0,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "brand": "air-canada",
+      "rank": 1,
+      "score": 32.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1,
+      "prominence": 0.375,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "brand": "air-transat",
+      "rank": 2,
+      "score": 31.7,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.3333333333333335,
+      "prominence": 0.20833333333333331,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "brand": "westjet",
+      "rank": 3,
+      "score": 22.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 2,
+      "prominence": 0.125,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "brand": "porter",
+      "rank": 4,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "brand": "sunwing",
+      "rank": 4,
+      "score": 21.3,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1.5,
+      "prominence": 0.1875,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "brand": "flair",
+      "rank": 6,
+      "score": 20,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 1,
+      "prominence": 0.25,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "td-insurance",
+      "rank": 1,
+      "score": 50,
+      "responses": 8,
+      "mentionRate": 0.625,
+      "avgPosition": 2.4,
+      "prominence": 0.375,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "belairdirect",
+      "rank": 2,
+      "score": 41.7,
+      "responses": 8,
+      "mentionRate": 0.5,
+      "avgPosition": 2,
+      "prominence": 0.3333333333333333,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "aviva",
+      "rank": 3,
+      "score": 32.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 1.6666666666666667,
+      "prominence": 0.25,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "intact",
+      "rank": 4,
+      "score": 31.5,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.6666666666666665,
+      "prominence": 0.19791666666666666,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "allstate",
+      "rank": 5,
+      "score": 28.3,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2.3333333333333335,
+      "prominence": 0.16666666666666666,
+      "citationRate": 0.125
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "desjardins",
+      "rank": 6,
+      "score": 27.1,
+      "responses": 8,
+      "mentionRate": 0.375,
+      "avgPosition": 2,
+      "prominence": 0.22916666666666666,
+      "citationRate": 0
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "sonnet",
+      "rank": 7,
+      "score": 21.5,
+      "responses": 8,
+      "mentionRate": 0.25,
+      "avgPosition": 3.5,
+      "prominence": 0.07291666666666666,
+      "citationRate": 0.25
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "brand": "cooperators",
+      "rank": 8,
+      "score": 10,
+      "responses": 8,
+      "mentionRate": 0.125,
+      "avgPosition": 1,
+      "prominence": 0.125,
+      "citationRate": 0
+    }
+  ],
+  "sources": [
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "domain": "example-review-site.ca",
+      "answers": 16,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "domain": "airtransat.com",
+      "answers": 4,
+      "brand": "air-transat"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "domain": "aircanada.com",
+      "answers": 3,
+      "brand": "air-canada"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "domain": "sunwing.ca",
+      "answers": 3,
+      "brand": "sunwing"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "domain": "westjet.com",
+      "answers": 3,
+      "brand": "westjet"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "domain": "flyflair.com",
+      "answers": 1,
+      "brand": "flair"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "airlines",
+      "domain": "flyporter.com",
+      "answers": 1,
+      "brand": "porter"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "example-review-site.ca",
+      "answers": 16,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "bmo.com",
+      "answers": 6,
+      "brand": "bmo"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "eqbank.ca",
+      "answers": 4,
+      "brand": "eq-bank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "rbc.com",
+      "answers": 4,
+      "brand": "rbc"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "td.com",
+      "answers": 4,
+      "brand": "td"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "scotiabank.com",
+      "answers": 2,
+      "brand": "scotiabank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "simplii.com",
+      "answers": 2,
+      "brand": "simplii"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "cibc.com",
+      "answers": 1,
+      "brand": "cibc"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "nbc.ca",
+      "answers": 1,
+      "brand": "national-bank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "banking",
+      "domain": "tangerine.ca",
+      "answers": 1,
+      "brand": "tangerine"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "example-review-site.ca",
+      "answers": 16,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "loblaws.ca",
+      "answers": 4,
+      "brand": "loblaws"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "realcanadiansuperstore.ca",
+      "answers": 3,
+      "brand": "real-canadian-superstore"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "foodbasics.ca",
+      "answers": 2,
+      "brand": "food-basics"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "freshco.com",
+      "answers": 2,
+      "brand": "freshco"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "metro.ca",
+      "answers": 2,
+      "brand": "metro"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "saveonfoods.com",
+      "answers": 2,
+      "brand": "save-on-foods"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "nofrills.ca",
+      "answers": 1,
+      "brand": "no-frills"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "sobeys.com",
+      "answers": 1,
+      "brand": "sobeys"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "grocery",
+      "domain": "walmart.ca",
+      "answers": 1,
+      "brand": "walmart"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "example-review-site.ca",
+      "answers": 16,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "intact.ca",
+      "answers": 4,
+      "brand": "intact"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "allstate.ca",
+      "answers": 3,
+      "brand": "allstate"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "belairdirect.com",
+      "answers": 3,
+      "brand": "belairdirect"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "tdinsurance.com",
+      "answers": 3,
+      "brand": "td-insurance"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "aviva.ca",
+      "answers": 2,
+      "brand": "aviva"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "cooperators.ca",
+      "answers": 2,
+      "brand": "cooperators"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "sonnet.ca",
+      "answers": 2,
+      "brand": "sonnet"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "insurance",
+      "domain": "desjardins.com",
+      "answers": 1,
+      "brand": "desjardins"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "example-review-site.ca",
+      "answers": 16,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "publicmobile.ca",
+      "answers": 5,
+      "brand": "public-mobile"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "freedommobile.ca",
+      "answers": 4,
+      "brand": "freedom-mobile"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "telus.com",
+      "answers": 4,
+      "brand": "telus"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "bell.ca",
+      "answers": 2,
+      "brand": "bell"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "fizz.ca",
+      "answers": 2,
+      "brand": "fizz"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "koodomobile.com",
+      "answers": 2,
+      "brand": "koodo"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "fido.ca",
+      "answers": 1,
+      "brand": "fido"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "rogers.com",
+      "answers": 1,
+      "brand": "rogers"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "all",
+      "category": "telecom",
+      "domain": "videotron.com",
+      "answers": 1,
+      "brand": "videotron"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "domain": "aircanada.com",
+      "answers": 2,
+      "brand": "air-canada"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "domain": "airtransat.com",
+      "answers": 2,
+      "brand": "air-transat"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "domain": "sunwing.ca",
+      "answers": 2,
+      "brand": "sunwing"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "domain": "flyflair.com",
+      "answers": 1,
+      "brand": "flair"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "airlines",
+      "domain": "westjet.com",
+      "answers": 1,
+      "brand": "westjet"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "td.com",
+      "answers": 3,
+      "brand": "td"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "bmo.com",
+      "answers": 2,
+      "brand": "bmo"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "eqbank.ca",
+      "answers": 2,
+      "brand": "eq-bank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "rbc.com",
+      "answers": 2,
+      "brand": "rbc"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "scotiabank.com",
+      "answers": 1,
+      "brand": "scotiabank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "simplii.com",
+      "answers": 1,
+      "brand": "simplii"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "banking",
+      "domain": "tangerine.ca",
+      "answers": 1,
+      "brand": "tangerine"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "domain": "loblaws.ca",
+      "answers": 2,
+      "brand": "loblaws"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "domain": "realcanadiansuperstore.ca",
+      "answers": 2,
+      "brand": "real-canadian-superstore"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "domain": "foodbasics.ca",
+      "answers": 1,
+      "brand": "food-basics"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "grocery",
+      "domain": "metro.ca",
+      "answers": 1,
+      "brand": "metro"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "domain": "allstate.ca",
+      "answers": 2,
+      "brand": "allstate"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "domain": "cooperators.ca",
+      "answers": 2,
+      "brand": "cooperators"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "domain": "intact.ca",
+      "answers": 2,
+      "brand": "intact"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "domain": "belairdirect.com",
+      "answers": 1,
+      "brand": "belairdirect"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "domain": "desjardins.com",
+      "answers": 1,
+      "brand": "desjardins"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "insurance",
+      "domain": "tdinsurance.com",
+      "answers": 1,
+      "brand": "td-insurance"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "domain": "telus.com",
+      "answers": 3,
+      "brand": "telus"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "domain": "fido.ca",
+      "answers": 1,
+      "brand": "fido"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "domain": "fizz.ca",
+      "answers": 1,
+      "brand": "fizz"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "domain": "koodomobile.com",
+      "answers": 1,
+      "brand": "koodo"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "openai",
+      "category": "telecom",
+      "domain": "videotron.com",
+      "answers": 1,
+      "brand": "videotron"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "domain": "airtransat.com",
+      "answers": 2,
+      "brand": "air-transat"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "domain": "westjet.com",
+      "answers": 2,
+      "brand": "westjet"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "domain": "aircanada.com",
+      "answers": 1,
+      "brand": "air-canada"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "domain": "flyporter.com",
+      "answers": 1,
+      "brand": "porter"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "airlines",
+      "domain": "sunwing.ca",
+      "answers": 1,
+      "brand": "sunwing"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "bmo.com",
+      "answers": 4,
+      "brand": "bmo"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "eqbank.ca",
+      "answers": 2,
+      "brand": "eq-bank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "rbc.com",
+      "answers": 2,
+      "brand": "rbc"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "cibc.com",
+      "answers": 1,
+      "brand": "cibc"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "nbc.ca",
+      "answers": 1,
+      "brand": "national-bank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "scotiabank.com",
+      "answers": 1,
+      "brand": "scotiabank"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "simplii.com",
+      "answers": 1,
+      "brand": "simplii"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "banking",
+      "domain": "td.com",
+      "answers": 1,
+      "brand": "td"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "freshco.com",
+      "answers": 2,
+      "brand": "freshco"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "loblaws.ca",
+      "answers": 2,
+      "brand": "loblaws"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "saveonfoods.com",
+      "answers": 2,
+      "brand": "save-on-foods"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "foodbasics.ca",
+      "answers": 1,
+      "brand": "food-basics"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "metro.ca",
+      "answers": 1,
+      "brand": "metro"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "nofrills.ca",
+      "answers": 1,
+      "brand": "no-frills"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "realcanadiansuperstore.ca",
+      "answers": 1,
+      "brand": "real-canadian-superstore"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "sobeys.com",
+      "answers": 1,
+      "brand": "sobeys"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "grocery",
+      "domain": "walmart.ca",
+      "answers": 1,
+      "brand": "walmart"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "domain": "aviva.ca",
+      "answers": 2,
+      "brand": "aviva"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "domain": "belairdirect.com",
+      "answers": 2,
+      "brand": "belairdirect"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "domain": "intact.ca",
+      "answers": 2,
+      "brand": "intact"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "domain": "sonnet.ca",
+      "answers": 2,
+      "brand": "sonnet"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "domain": "tdinsurance.com",
+      "answers": 2,
+      "brand": "td-insurance"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "insurance",
+      "domain": "allstate.ca",
+      "answers": 1,
+      "brand": "allstate"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "example-review-site.ca",
+      "answers": 8,
+      "brand": null
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "publicmobile.ca",
+      "answers": 5,
+      "brand": "public-mobile"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "freedommobile.ca",
+      "answers": 4,
+      "brand": "freedom-mobile"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "bell.ca",
+      "answers": 2,
+      "brand": "bell"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "fizz.ca",
+      "answers": 1,
+      "brand": "fizz"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "koodomobile.com",
+      "answers": 1,
+      "brand": "koodo"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "rogers.com",
+      "answers": 1,
+      "brand": "rogers"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "telus.com",
+      "answers": 1,
+      "brand": "telus"
+    },
+    {
+      "week": "2026-W48",
+      "engine": "perplexity",
+      "category": "telecom",
+      "domain": "virginplus.ca",
+      "answers": 1,
+      "brand": "virgin-plus"
+    }
+  ]
+}
