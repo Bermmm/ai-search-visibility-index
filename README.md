@@ -147,6 +147,8 @@ A full default run is 20 questions × 3 engines × 2 samples = 120 calls. `--dry
 
 Model choices can be overridden in `.env` with `OPENAI_MODEL`, `PERPLEXITY_MODEL` or `GEMINI_MODEL`. Add any new model's prices to `pricing.ts`.
 
+> **Behind an HTTPS proxy** (a corporate network, or a cloud sandbox that injects API keys at its proxy, such as Claude Code on the web): Node's built-in `fetch` ignores `HTTPS_PROXY` by default. On Node 22.21+ run the collector with `NODE_USE_ENV_PROXY=1`, e.g. `NODE_USE_ENV_PROXY=1 pnpm collect run`.
+
 > **Upgrading from an earlier checkout:** the database schema changed (version 2). Move the old `data/index.db` aside and run `pnpm collect init`.
 
 ### Publishing a week
