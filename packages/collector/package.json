@@ -1,0 +1,26 @@
+{
+  "name": "@aivi/collector",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Runs the index prompts against AI engines and stores results in SQLite.",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "bin": {
+    "aivi": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "start": "tsc -p tsconfig.json && node dist/cli.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}

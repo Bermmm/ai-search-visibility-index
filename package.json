@@ -1,0 +1,20 @@
+{
+  "name": "ai-search-visibility-index",
+  "private": true,
+  "description": "A weekly index of how often Canadian brands show up in AI search answers.",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.28.0",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "collect": "pnpm --filter @aivi/collector start",
+    "dev": "pnpm --filter @aivi/site dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
