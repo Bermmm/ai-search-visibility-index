@@ -9,9 +9,15 @@ export interface RetryOptions {
   sleep?: (ms: number) => Promise<void>;
 }
 
+/** A 429 that means "out of credits/quota" rather than "slow down"; retrying can't help. */
+const OUT_OF_CREDITS = /insufficient_quota|credit_balance_exhausted|billing/i;
+
 /** Errors worth retrying: rate limits, server errors, timeouts and dropped connections. */
 export function isRetryable(err: unknown): boolean {
-  if (err instanceof HttpError) return err.status === 408 || err.status === 429 || err.status >= 500;
+  if (err instanceof HttpError) {
+    if (err.status === 429) return !OUT_OF_CREDITS.test(err.body);
+    return err.status === 408 || err.status >= 500;
+  }
   if (err instanceof Error) {
     // fetch() throws TypeError on network failure; AbortSignal.timeout() throws TimeoutError.
     return err.name === "TimeoutError" || err.name === "AbortError" || err.name === "TypeError";
